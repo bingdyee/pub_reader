@@ -1,0 +1,1 @@
+enum ResourceType { video, book }
