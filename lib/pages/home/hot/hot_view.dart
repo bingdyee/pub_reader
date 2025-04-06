@@ -19,11 +19,12 @@ class HotView extends StatefulWidget {
 }
 
 class _HotViewState extends State<HotView> {
-  List<ResourceModel> resourceList = MockedData.hotResourceList;
+  List<ResourceModel> resourceList = [];
 
   @override
   void initState() {
     super.initState();
+    resourceList = MockedData.hotResourceList;
   }
 
   @override
@@ -51,8 +52,7 @@ class _HotViewState extends State<HotView> {
   }
 
   Widget _buildResourceCard(int index) {
-    final height =
-        (ScreenUtil().screenWidth / 2 - 30.r) * resourceList[index].heightRatio;
+    final height = (ScreenUtil().screenWidth / 2 - 30.r) * resourceList[index].heightRatio;
     Widget tag;
     List<Widget> footer;
     final content = [

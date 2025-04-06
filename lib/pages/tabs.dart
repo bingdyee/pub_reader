@@ -35,22 +35,16 @@ class _TabsPageState extends State<TabsPage> {
         iconSize: 24.r,
         items: const [
           BottomNavigationBarItem(
-            icon: ImageIcon(AssetImage("assets/icons/home.png")),
-            label: "首页",
+            icon: ImageIcon(AssetImage("assets/icons/explore.png")),
+            label: "热门",
           ),
           BottomNavigationBarItem(
             icon: ImageIcon(AssetImage("assets/icons/bookshelf.png")),
             label: "书架",
           ),
           BottomNavigationBarItem(
-            icon: ImageIcon(
-              AssetImage("assets/icons/ai_assistant_outline.png"),
-            ),
-            label: "AI问书",
-          ),
-          BottomNavigationBarItem(
-            icon: ImageIcon(AssetImage("assets/icons/explore.png")),
-            label: "发现",
+            icon: ImageIcon(AssetImage("assets/icons/ai_assistant.png")),
+            label: "问书",
           ),
           BottomNavigationBarItem(
             icon: Badge(
@@ -65,7 +59,6 @@ class _TabsPageState extends State<TabsPage> {
         children: const [
           HomePage(),
           BookshelfPage(),
-          AssistantPage(),
           ExplorePage(),
           ProfilePage(),
         ],

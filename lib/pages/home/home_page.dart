@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage>
                 fontWeight: FontWeight.w500,
                 color: Colors.grey.shade600,
               ),
-              tabs: [Tab(text: "关注"), Tab(text: "热门"), Tab(text: "精选")],
+              tabs: [Tab(text: "关注"), Tab(text: "推荐"), Tab(text: "发现")],
             ),
             ImageIcon(AssetImage("assets/icons/search.png"), size: 26.r),
           ],
