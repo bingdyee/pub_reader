@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.infrastructure.common.eventbus;
+package cn.scifi.pubreader.infrastructure.common.eventbus;
 
 
-import cn.scifi.novelogic.infrastructure.common.utils.CollectionUtils;
+import cn.scifi.pubreader.infrastructure.common.utils.CollectionUtils;
 
 import java.util.Map;
 import java.util.concurrent.*;

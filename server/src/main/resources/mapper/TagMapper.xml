@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.scifi.novelogic.infrastructure.mapper.TagMapper">
+<mapper namespace="cn.scifi.pubreader.infrastructure.mapper.TagMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.scifi.novelogic.infrastructure.po.TagPO">
+    <resultMap id="BaseResultMap" type="cn.scifi.pubreader.infrastructure.po.TagPO">
         <result column="id" property="id" />
         <result column="tag_name" property="tagName" />
         <result column="create_time" property="createTime" />
@@ -22,11 +22,11 @@
         </foreach>
     </insert>
 
-    <select id="selectTopTags" resultType="cn.scifi.novelogic.infrastructure.po.TagPO">
+    <select id="selectTopTags" resultType="cn.scifi.pubreader.infrastructure.po.TagPO">
         SELECT id, tag_name FROM novel_tag t LEFT JOIN novel_book_tag bt ON t.id=bt.tag_id GROUP BY t.id ORDER BY COUNT(bt.book_id) DESC LIMIT #{topN}
     </select>
 
-    <select id="selectByBookId" resultType="cn.scifi.novelogic.infrastructure.po.TagPO">
+    <select id="selectByBookId" resultType="cn.scifi.pubreader.infrastructure.po.TagPO">
         SELECT t.id, t.tag_name FROM novel_tag t, novel_book_tag bt WHERE t.id=bt.tag_id AND bt.book_id=#{bookId}
     </select>
 

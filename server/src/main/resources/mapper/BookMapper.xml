@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.scifi.novelogic.infrastructure.mapper.BookMapper">
+<mapper namespace="cn.scifi.pubreader.infrastructure.mapper.BookMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.scifi.novelogic.infrastructure.po.BookPO">
+    <resultMap id="BaseResultMap" type="cn.scifi.pubreader.infrastructure.po.BookPO">
         <result column="id" property="id" />
         <result column="title" property="title" />
         <result column="author" property="author" />
@@ -29,7 +29,7 @@
         id, title, author, summary, cover_url, channel, category_id, category_name, sub_category_id, sub_category_name, word_count, read_count, last_chapter_id, last_chapter_title, last_chapter_update_time, status, create_time, update_time
     </sql>
 
-    <select id="selectWithConditions" resultType="cn.scifi.novelogic.infrastructure.po.BookPO">
+    <select id="selectWithConditions" resultType="cn.scifi.pubreader.infrastructure.po.BookPO">
         SELECT
         b.id, b.title, b.author, b.summary, b.cover_url, b.channel,
         b.category_id, b.category_name, b.sub_category_id, b.sub_category_name,
@@ -69,7 +69,7 @@
         </if>
     </select>
 
-    <select id="selectByAuthor" resultType="cn.scifi.novelogic.infrastructure.po.BookPO">
+    <select id="selectByAuthor" resultType="cn.scifi.pubreader.infrastructure.po.BookPO">
         SELECT
             b.id, b.title, b.author, b.summary, b.cover_url, b.channel,
             b.word_count, b.last_chapter_id, b.last_chapter_title, b.status

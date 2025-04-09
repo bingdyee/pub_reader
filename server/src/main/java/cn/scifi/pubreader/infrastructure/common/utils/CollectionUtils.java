@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.utils;
+package cn.scifi.pubreader.infrastructure.common.utils;
 
 import java.util.Collection;
 import java.util.Map;

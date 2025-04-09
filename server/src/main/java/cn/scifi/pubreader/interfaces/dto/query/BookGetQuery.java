@@ -1,11 +1,11 @@
-package cn.scifi.novelogic.interfaces.dto.query;
+package cn.scifi.pubreader.interfaces.dto.query;
 
-import cn.scifi.novelogic.infrastructure.common.web.PageQuery;
-import cn.scifi.novelogic.domain.model.valobj.BookOrderType;
-import cn.scifi.novelogic.domain.model.valobj.BookStatus;
-import cn.scifi.novelogic.domain.model.valobj.BookUpdateRange;
-import cn.scifi.novelogic.domain.model.valobj.BookCountRange;
-import cn.scifi.novelogic.domain.model.valobj.Channel;
+import cn.scifi.pubreader.infrastructure.common.web.PageQuery;
+import cn.scifi.pubreader.domain.model.valobj.BookOrderType;
+import cn.scifi.pubreader.domain.model.valobj.BookStatus;
+import cn.scifi.pubreader.domain.model.valobj.BookUpdateRange;
+import cn.scifi.pubreader.domain.model.valobj.BookCountRange;
+import cn.scifi.pubreader.domain.model.valobj.Channel;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.Getter;
 import lombok.Setter;

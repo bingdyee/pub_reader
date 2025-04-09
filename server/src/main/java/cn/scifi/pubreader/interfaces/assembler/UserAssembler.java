@@ -1,9 +1,9 @@
-package cn.scifi.novelogic.interfaces.assembler;
+package cn.scifi.pubreader.interfaces.assembler;
 
 
-import cn.scifi.novelogic.domain.model.entity.Author;
-import cn.scifi.novelogic.infrastructure.common.utils.BeanConverter;
-import cn.scifi.novelogic.interfaces.dto.vo.UserVO;
+import cn.scifi.pubreader.domain.model.entity.Author;
+import cn.scifi.pubreader.infrastructure.common.utils.BeanConverter;
+import cn.scifi.pubreader.interfaces.dto.vo.UserVO;
 
 /**
  * @author bingdyee

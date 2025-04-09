@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.interfaces.dto.command;
+package cn.scifi.pubreader.interfaces.dto.command;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;

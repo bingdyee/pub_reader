@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.constants.enums;
+package cn.scifi.pubreader.infrastructure.common.constants.enums;
 
 /**
  * @author bingdyee

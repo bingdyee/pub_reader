@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.interfaces.dto.vo;
+package cn.scifi.pubreader.interfaces.dto.vo;
 
-import cn.scifi.novelogic.infrastructure.common.serialize.MaskType;
-import cn.scifi.novelogic.infrastructure.common.serialize.SensitiveField;
+import cn.scifi.pubreader.infrastructure.common.serialize.MaskType;
+import cn.scifi.pubreader.infrastructure.common.serialize.SensitiveField;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.Setter;

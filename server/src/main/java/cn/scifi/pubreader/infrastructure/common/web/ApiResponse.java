@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.infrastructure.common.web;
+package cn.scifi.pubreader.infrastructure.common.web;
 
-import cn.scifi.novelogic.infrastructure.common.constants.StatusInfo;
-import cn.scifi.novelogic.infrastructure.common.constants.enums.StatusCode;
+import cn.scifi.pubreader.infrastructure.common.constants.StatusInfo;
+import cn.scifi.pubreader.infrastructure.common.constants.enums.StatusCode;
 import lombok.Getter;
 import lombok.Setter;
 

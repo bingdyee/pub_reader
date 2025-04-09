@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.interfaces.dto.vo;
+package cn.scifi.pubreader.interfaces.dto.vo;
 
 import lombok.Getter;
 import lombok.Setter;

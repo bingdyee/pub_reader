@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.infrastructure.po;
+package cn.scifi.pubreader.infrastructure.po;
 
-import cn.scifi.novelogic.domain.model.valobj.BookStatus;
-import cn.scifi.novelogic.domain.model.valobj.Channel;
+import cn.scifi.pubreader.domain.model.valobj.BookStatus;
+import cn.scifi.pubreader.domain.model.valobj.Channel;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,6 @@
-package cn.scifi.novelogic.infrastructure.common.security;
+package cn.scifi.pubreader.infrastructure.common.security;
 
-import cn.scifi.novelogic.infrastructure.common.constants.enums.UserStatus;
+import cn.scifi.pubreader.infrastructure.common.constants.enums.UserStatus;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;

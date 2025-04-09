@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.po;
+package cn.scifi.pubreader.infrastructure.po;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;

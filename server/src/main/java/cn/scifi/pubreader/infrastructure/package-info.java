@@ -4,4 +4,4 @@
  * @author Bing D. Yee
  * @since 2022/04/07
  */
-package cn.scifi.novelogic.infrastructure;
+package cn.scifi.pubreader.infrastructure;

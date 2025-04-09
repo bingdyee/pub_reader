@@ -1,10 +1,10 @@
-package cn.scifi.novelogic.interfaces.facade;
+package cn.scifi.pubreader.interfaces.facade;
 
-import cn.scifi.novelogic.application.manager.UserAuthenticationManager;
-import cn.scifi.novelogic.infrastructure.common.security.UserPrincipal;
-import cn.scifi.novelogic.interfaces.assembler.UserAssembler;
-import cn.scifi.novelogic.interfaces.dto.command.UserLoginCmd;
-import cn.scifi.novelogic.interfaces.dto.vo.UserVO;
+import cn.scifi.pubreader.application.manager.UserAuthenticationManager;
+import cn.scifi.pubreader.infrastructure.common.security.UserPrincipal;
+import cn.scifi.pubreader.interfaces.assembler.UserAssembler;
+import cn.scifi.pubreader.interfaces.dto.command.UserLoginCmd;
+import cn.scifi.pubreader.interfaces.dto.vo.UserVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

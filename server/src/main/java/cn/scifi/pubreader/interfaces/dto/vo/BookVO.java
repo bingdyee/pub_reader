@@ -1,6 +1,6 @@
-package cn.scifi.novelogic.interfaces.dto.vo;
+package cn.scifi.pubreader.interfaces.dto.vo;
 
-import cn.scifi.novelogic.domain.model.valobj.BookStatus;
+import cn.scifi.pubreader.domain.model.valobj.BookStatus;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.Setter;

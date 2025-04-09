@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.infrastructure.mapper;
+package cn.scifi.pubreader.infrastructure.mapper;
 
-import cn.scifi.novelogic.domain.repository.conditions.BookQryCondition;
-import cn.scifi.novelogic.infrastructure.po.BookPO;
+import cn.scifi.pubreader.domain.repository.conditions.BookQryCondition;
+import cn.scifi.pubreader.infrastructure.po.BookPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import org.apache.ibatis.annotations.Mapper;

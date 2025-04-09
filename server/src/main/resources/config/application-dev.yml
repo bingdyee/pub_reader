@@ -17,7 +17,7 @@ server:
       enabled: true
       dir: logs
       pattern: combined
-      prefix: novelogic_access.
+      prefix: pub-reader_access.
 
 spring:
   config:
@@ -42,7 +42,7 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    default-enum-type-handler: cn.scifi.novelogic.infrastructure.common.serialize.CodedEnumTypeHandler
+    default-enum-type-handler: cn.scifi.pubreader.infrastructure.common.serialize.CodedEnumTypeHandler
 
 app:
   api-prefix: /api

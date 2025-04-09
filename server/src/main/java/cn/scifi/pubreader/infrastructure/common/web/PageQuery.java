@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.web;
+package cn.scifi.pubreader.infrastructure.common.web;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.Parameter;

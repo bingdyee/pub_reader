@@ -1,6 +1,6 @@
 package cn.scifi.novelogic.generator;
 
-import cn.scifi.novelogic.infrastructure.po.BasePO;
+import cn.scifi.pubreader.infrastructure.po.BasePO;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;

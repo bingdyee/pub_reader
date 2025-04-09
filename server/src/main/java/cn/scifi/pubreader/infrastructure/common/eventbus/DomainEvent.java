@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.eventbus;
+package cn.scifi.pubreader.infrastructure.common.eventbus;
 
 import lombok.Getter;
 

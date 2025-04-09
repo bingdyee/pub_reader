@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.infrastructure.common.constants;
+package cn.scifi.pubreader.infrastructure.common.constants;
 
 
-import cn.scifi.novelogic.infrastructure.common.exception.UnsupportedEnumCodeException;
+import cn.scifi.pubreader.infrastructure.common.exception.UnsupportedEnumCodeException;
 
 /**
  * @author bingdyee

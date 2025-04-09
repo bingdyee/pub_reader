@@ -1,17 +1,21 @@
-package cn.scifi.novelogic.interfaces.assembler;
+package cn.scifi.pubreader.interfaces.assembler;
 
-import cn.scifi.novelogic.application.manager.UserAuthenticationManager;
-import cn.scifi.novelogic.domain.model.aggregates.BookAggregate;
-import cn.scifi.novelogic.domain.model.entity.Book;
-import cn.scifi.novelogic.domain.model.entity.Chapter;
-import cn.scifi.novelogic.domain.model.valobj.BookOrderType;
-import cn.scifi.novelogic.domain.model.valobj.Channel;
-import cn.scifi.novelogic.domain.repository.conditions.BookQryCondition;
-import cn.scifi.novelogic.infrastructure.common.security.UserPrincipal;
-import cn.scifi.novelogic.infrastructure.common.utils.BeanConverter;
-import cn.scifi.novelogic.interfaces.dto.command.BookCreateCmd;
-import cn.scifi.novelogic.interfaces.dto.query.BookGetQuery;
-import cn.scifi.novelogic.interfaces.dto.vo.*;
+import cn.scifi.pubreader.application.manager.UserAuthenticationManager;
+import cn.scifi.pubreader.domain.model.aggregates.BookAggregate;
+import cn.scifi.pubreader.domain.model.entity.Book;
+import cn.scifi.pubreader.domain.model.entity.Chapter;
+import cn.scifi.pubreader.domain.model.valobj.BookOrderType;
+import cn.scifi.pubreader.domain.model.valobj.Channel;
+import cn.scifi.pubreader.domain.repository.conditions.BookQryCondition;
+import cn.scifi.pubreader.infrastructure.common.security.UserPrincipal;
+import cn.scifi.pubreader.infrastructure.common.utils.BeanConverter;
+import cn.scifi.pubreader.interfaces.dto.command.BookCreateCmd;
+import cn.scifi.pubreader.interfaces.dto.query.BookGetQuery;
+import cn.scifi.pubreader.interfaces.dto.vo.*;
+import cn.scifi.pubreader.interfaces.dto.vo.BookDetailVO;
+import cn.scifi.pubreader.interfaces.dto.vo.BookVO;
+import cn.scifi.pubreader.interfaces.dto.vo.ChapterVO;
+import cn.scifi.pubreader.interfaces.dto.vo.PartChapterVO;
 
 import java.util.ArrayList;
 import java.util.List;

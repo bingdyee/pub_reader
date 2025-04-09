@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.utils;
+package cn.scifi.pubreader.infrastructure.common.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

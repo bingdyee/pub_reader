@@ -1,6 +1,6 @@
-package cn.scifi.novelogic.infrastructure.common.serialize;
+package cn.scifi.pubreader.infrastructure.common.serialize;
 
-import cn.scifi.novelogic.infrastructure.common.constants.CodedEnum;
+import cn.scifi.pubreader.infrastructure.common.constants.CodedEnum;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;

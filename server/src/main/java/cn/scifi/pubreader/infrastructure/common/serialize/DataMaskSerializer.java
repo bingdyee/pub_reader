@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.infrastructure.common.serialize;
+package cn.scifi.pubreader.infrastructure.common.serialize;
 
-import cn.scifi.novelogic.infrastructure.common.utils.DataMasker;
-import cn.scifi.novelogic.infrastructure.common.utils.Strings;
+import cn.scifi.pubreader.infrastructure.common.utils.DataMasker;
+import cn.scifi.pubreader.infrastructure.common.utils.Strings;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.BeanProperty;
 import com.fasterxml.jackson.databind.JsonMappingException;

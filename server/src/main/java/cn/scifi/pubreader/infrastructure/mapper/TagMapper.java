@@ -1,6 +1,6 @@
-package cn.scifi.novelogic.infrastructure.mapper;
+package cn.scifi.pubreader.infrastructure.mapper;
 
-import cn.scifi.novelogic.infrastructure.po.TagPO;
+import cn.scifi.pubreader.infrastructure.po.TagPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

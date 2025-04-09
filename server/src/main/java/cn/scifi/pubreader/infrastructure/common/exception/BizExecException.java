@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.infrastructure.common.exception;
+package cn.scifi.pubreader.infrastructure.common.exception;
 
-import cn.scifi.novelogic.infrastructure.common.constants.StatusInfo;
-import cn.scifi.novelogic.infrastructure.common.constants.enums.StatusCode;
+import cn.scifi.pubreader.infrastructure.common.constants.StatusInfo;
+import cn.scifi.pubreader.infrastructure.common.constants.enums.StatusCode;
 
 public class BizExecException extends AbstractException {
 

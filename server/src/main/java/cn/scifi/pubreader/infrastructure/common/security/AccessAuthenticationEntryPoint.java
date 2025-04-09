@@ -1,9 +1,9 @@
-package cn.scifi.novelogic.infrastructure.common.security;
+package cn.scifi.pubreader.infrastructure.common.security;
 
 
-import cn.scifi.novelogic.infrastructure.common.web.ApiResponse;
-import cn.scifi.novelogic.infrastructure.common.constants.enums.StatusCode;
-import cn.scifi.novelogic.infrastructure.common.utils.Jsons;
+import cn.scifi.pubreader.infrastructure.common.web.ApiResponse;
+import cn.scifi.pubreader.infrastructure.common.constants.enums.StatusCode;
+import cn.scifi.pubreader.infrastructure.common.utils.Jsons;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.MediaType;

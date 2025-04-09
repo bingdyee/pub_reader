@@ -1,6 +1,6 @@
-package cn.scifi.novelogic.infrastructure.common.constants.enums;
+package cn.scifi.pubreader.infrastructure.common.constants.enums;
 
-import cn.scifi.novelogic.infrastructure.common.constants.CodedEnum;
+import cn.scifi.pubreader.infrastructure.common.constants.CodedEnum;
 
 /**
  *

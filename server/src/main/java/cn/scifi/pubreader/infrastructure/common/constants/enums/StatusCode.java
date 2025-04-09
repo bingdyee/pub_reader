@@ -1,7 +1,7 @@
-package cn.scifi.novelogic.infrastructure.common.constants.enums;
+package cn.scifi.pubreader.infrastructure.common.constants.enums;
 
 
-import cn.scifi.novelogic.infrastructure.common.constants.StatusInfo;
+import cn.scifi.pubreader.infrastructure.common.constants.StatusInfo;
 
 /**
  * 默认状态码（5位）

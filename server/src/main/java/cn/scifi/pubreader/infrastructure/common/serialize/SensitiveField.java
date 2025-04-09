@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.serialize;
+package cn.scifi.pubreader.infrastructure.common.serialize;
 
 import com.fasterxml.jackson.annotation.JacksonAnnotationsInside;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;

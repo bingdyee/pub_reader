@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.scifi.novelogic.infrastructure.mapper.AuthorMapper">
+<mapper namespace="cn.scifi.pubreader.infrastructure.mapper.AuthorMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.scifi.novelogic.infrastructure.po.AuthorPO">
+    <resultMap id="BaseResultMap" type="cn.scifi.pubreader.infrastructure.po.AuthorPO">
         <result column="id" property="id" />
         <result column="pseudonym" property="pseudonym" />
         <result column="mobile" property="mobile" />
@@ -27,7 +27,7 @@
         id, pseudonym, mobile, email, password, avatar_url, biography, locale, vip_level, total_books, total_words, first_creation_time, is_email_verified, status, create_time, update_time
     </sql>
 
-    <select id="selectByUid" resultType="cn.scifi.novelogic.infrastructure.po.AuthorPO">
+    <select id="selectByUid" resultType="cn.scifi.pubreader.infrastructure.po.AuthorPO">
         SELECT id, pseudonym, avatar_url, password, status FROM novel_author WHERE
         <choose>
             <when test="mobile != null and mobile != ''">
@@ -39,7 +39,7 @@
         </choose>
     </select>
 
-    <select id="selectByPseudonym" resultType="cn.scifi.novelogic.infrastructure.po.AuthorPO">
+    <select id="selectByPseudonym" resultType="cn.scifi.pubreader.infrastructure.po.AuthorPO">
         SELECT id, pseudonym, mobile, email, avatar_url, biography, locale, vip_level, total_books, total_words, first_creation_time FROM novel_author WHERE pseudonym=#{pseudonym}
     </select>
 

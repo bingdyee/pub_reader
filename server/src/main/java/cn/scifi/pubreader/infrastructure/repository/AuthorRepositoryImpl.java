@@ -1,14 +1,14 @@
-package cn.scifi.novelogic.infrastructure.repository;
+package cn.scifi.pubreader.infrastructure.repository;
 
-import cn.scifi.novelogic.domain.model.entity.Book;
-import cn.scifi.novelogic.infrastructure.common.utils.BeanConverter;
-import cn.scifi.novelogic.infrastructure.common.utils.Validators;
-import cn.scifi.novelogic.domain.model.entity.Author;
-import cn.scifi.novelogic.domain.repository.AuthorRepository;
-import cn.scifi.novelogic.infrastructure.mapper.BookMapper;
-import cn.scifi.novelogic.infrastructure.mapper.AuthorMapper;
-import cn.scifi.novelogic.infrastructure.po.BookPO;
-import cn.scifi.novelogic.infrastructure.po.AuthorPO;
+import cn.scifi.pubreader.domain.model.entity.Book;
+import cn.scifi.pubreader.infrastructure.common.utils.BeanConverter;
+import cn.scifi.pubreader.infrastructure.common.utils.Validators;
+import cn.scifi.pubreader.domain.model.entity.Author;
+import cn.scifi.pubreader.domain.repository.AuthorRepository;
+import cn.scifi.pubreader.infrastructure.mapper.BookMapper;
+import cn.scifi.pubreader.infrastructure.mapper.AuthorMapper;
+import cn.scifi.pubreader.infrastructure.po.BookPO;
+import cn.scifi.pubreader.infrastructure.po.AuthorPO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

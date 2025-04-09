@@ -1,6 +1,6 @@
-package cn.scifi.novelogic.infrastructure.common.security;
+package cn.scifi.pubreader.infrastructure.common.security;
 
-import cn.scifi.novelogic.infrastructure.common.utils.Strings;
+import cn.scifi.pubreader.infrastructure.common.utils.Strings;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -4,4 +4,4 @@
  * @author bingdyee
  * @since 2022/04/08
  */
-package cn.scifi.novelogic.interfaces;
+package cn.scifi.pubreader.interfaces;

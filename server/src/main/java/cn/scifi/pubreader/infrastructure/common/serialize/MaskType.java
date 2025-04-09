@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.serialize;
+package cn.scifi.pubreader.infrastructure.common.serialize;
 
 /**
  * @author Bing D. Yee

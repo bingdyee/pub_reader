@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.utils;
+package cn.scifi.pubreader.infrastructure.common.utils;
 
 /**
  * 脱敏工具类

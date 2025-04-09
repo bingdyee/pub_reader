@@ -1,4 +1,4 @@
-package cn.scifi.novelogic.infrastructure.common.web;
+package cn.scifi.pubreader.infrastructure.common.web;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

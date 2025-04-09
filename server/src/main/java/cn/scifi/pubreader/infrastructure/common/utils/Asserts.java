@@ -1,8 +1,8 @@
-package cn.scifi.novelogic.infrastructure.common.utils;
+package cn.scifi.pubreader.infrastructure.common.utils;
 
 
-import cn.scifi.novelogic.infrastructure.common.constants.StatusInfo;
-import cn.scifi.novelogic.infrastructure.common.exception.BizExecException;
+import cn.scifi.pubreader.infrastructure.common.constants.StatusInfo;
+import cn.scifi.pubreader.infrastructure.common.exception.BizExecException;
 
 import java.util.Collection;
 import java.util.Map;
