@@ -1,6 +1,7 @@
 import 'package:easy_refresh/easy_refresh.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:pub_reader/common/values/colors.dart';
 
 class EasyRefreshWrapper extends StatefulWidget {
   final Widget child;
@@ -63,7 +64,7 @@ class _EasyRefreshWrapperState extends State<EasyRefreshWrapper> {
             padding: EdgeInsets.only(top: 12.h),
             child: CircularProgressIndicator(
               strokeWidth: 3.r,
-              valueColor: const AlwaysStoppedAnimation(Colors.red),
+              valueColor: const AlwaysStoppedAnimation(AppColors.primary),
             ),
           );
         }
@@ -102,7 +103,7 @@ class _EasyRefreshWrapperState extends State<EasyRefreshWrapper> {
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           physics: physics,
-          padding: EdgeInsets.all(10.r),
+          padding: EdgeInsets.all(12.r),
           child: widget.child,
         ),
       ),

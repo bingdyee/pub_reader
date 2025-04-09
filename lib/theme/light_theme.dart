@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pub_reader/common/values/colors.dart';
 
 
 ThemeData lightData = ThemeData(
   useMaterial3: true,
-  primaryColor: Colors.red,
+  primaryColor: AppColors.primary,
   scaffoldBackgroundColor: Colors.grey.shade50,
   appBarTheme: const AppBarTheme(
     systemOverlayStyle: SystemUiOverlayStyle.dark,
@@ -13,7 +14,7 @@ ThemeData lightData = ThemeData(
     labelColor: Colors.black,
   ),
   badgeTheme: const BadgeThemeData(
-    backgroundColor: Colors.red,
+    backgroundColor: AppColors.primary,
   ),
   colorScheme: ColorScheme.light(
 

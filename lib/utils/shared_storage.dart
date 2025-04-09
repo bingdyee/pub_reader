@@ -1,12 +1,11 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 /// SharedPreferences 管理工具类（单例模式）
 class SharedStorageManager {
-
   SharedStorageManager._internal();
 
-  static final SharedStorageManager _instance = SharedStorageManager._internal();
+  static final SharedStorageManager _instance =
+      SharedStorageManager._internal();
 
   static SharedStorageManager get instance => _instance;
 
@@ -62,12 +61,12 @@ class SharedStorageManager {
     return _prefs.getBool(key);
   }
 
-  /// 保存 List<String> 类型的值
+  /// 保存 List String 类型的值
   Future<bool> saveStringList(String key, List<String> value) async {
     return _prefs.setStringList(key, value);
   }
 
-  /// 获取 List<String> 类型的值
+  /// 获取 List String 类型的值
   List<String>? getStringList(String key) {
     return _prefs.getStringList(key);
   }
@@ -81,5 +80,4 @@ class SharedStorageManager {
   Future<bool> clearAll() async {
     return _prefs.clear();
   }
-
 }

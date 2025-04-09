@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lazy_load_indexed_stack/lazy_load_indexed_stack.dart';
-import 'package:pub_reader/pages/assistant/assistant_page.dart';
 import 'package:pub_reader/pages/bookshelf/bookshelf_page.dart';
 import 'package:pub_reader/pages/explore/explore_page.dart';
 import 'package:pub_reader/pages/home/home_page.dart';
