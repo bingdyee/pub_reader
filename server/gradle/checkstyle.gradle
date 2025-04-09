@@ -1,0 +1,6 @@
+apply plugin: "checkstyle"
+
+checkstyle {
+    toolVersion = "10.21.1"
+    configFile = rootProject.file("src/checkstyle/checkstyle.xml")
+}

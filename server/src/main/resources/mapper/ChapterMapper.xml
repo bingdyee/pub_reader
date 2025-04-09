@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.scifi.novelogic.infrastructure.mapper.ChapterMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.scifi.novelogic.infrastructure.po.ChapterPO">
+        <result column="id" property="id" />
+        <result column="book_id" property="bookId" />
+        <result column="title" property="title" />
+        <result column="part_name" property="partName" />
+        <result column="word_count" property="wordCount" />
+        <result column="publish_time" property="publishTime" />
+        <result column="is_vip" property="vip" />
+        <result column="order_num" property="orderNum" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, book_id, title, part_name, word_count, publish_time, status, is_vip, order_num, create_time, update_time
+    </sql>
+
+    <select id="selectByBookId" resultType="cn.scifi.novelogic.infrastructure.po.ChapterPO">
+        SELECT id, title, part_name, word_count, publish_time, is_vip, order_num FROM novel_chapter WHERE book_id=#{bookId}
+    </select>
+
+    <select id="selectChapterDetail" resultType="cn.scifi.novelogic.infrastructure.po.ChapterPO">
+        SELECT c.id, c.title, c.part_name, c2.content, c.word_count, c.publish_time, c.is_vip FROM novel_chapter c, novel_chapter_content c2 WHERE c.id=c2.chapter_id AND c.id=#{chapterId}
+    </select>
+
+</mapper>
