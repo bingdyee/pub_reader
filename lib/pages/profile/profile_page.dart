@@ -17,6 +17,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey.shade100,
+        surfaceTintColor: Colors.white,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -35,7 +36,7 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
       backgroundColor: Colors.grey.shade100,
       body: Padding(
-        padding: EdgeInsets.all(15.r),
+        padding: EdgeInsets.only(left: 15.r, right: 15.r, top: 10.r),
         child: SafeArea(
           child: SingleChildScrollView(
             child: Column(
@@ -151,14 +152,14 @@ class _ProfilePageState extends State<ProfilePage> {
                         spacing: 4.h,
                         children: [
                           Text(
-                            "订阅",
+                            "想法",
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 16.sp,
                             ),
                           ),
                           Text(
-                            "订阅99本",
+                            "累计90个",
                             style: TextStyle(
                               fontSize: 12.sp,
                               color: Colors.grey.shade600,
@@ -171,14 +172,14 @@ class _ProfilePageState extends State<ProfilePage> {
                         spacing: 4.h,
                         children: [
                           Text(
-                            "关注",
+                            "订阅",
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 16.sp,
                             ),
                           ),
                           Text(
-                            "关注99人",
+                            "已上架1本",
                             style: TextStyle(
                               fontSize: 12.sp,
                               color: Colors.grey.shade600,
@@ -199,12 +200,12 @@ class _ProfilePageState extends State<ProfilePage> {
                     borderRadius: BorderRadius.circular(12.r),
                   ),
                   child: Column(
-                    spacing: 20.h,
+                    spacing: 25.h,
                     children: [
                       Row(
                         spacing: 10.w,
                         children: [
-                          Icon(Icons.panorama_fish_eye, size: 28.sp),
+                          Image.asset("assets/icons/fa.png", width: 28.r, height: 28.r,),
                           Text(
                             "收藏",
                             style: TextStyle(
@@ -220,7 +221,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           Row(
                             spacing: 10.w,
                             children: [
-                              Icon(Icons.history, size: 28.sp),
+                              Image.asset("assets/icons/history.png", width: 28.r, height: 28.r,),
                               Text(
                                 "浏览记录",
                                 style: TextStyle(
@@ -249,7 +250,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           Row(
                             spacing: 10.w,
                             children: [
-                              Icon(Icons.access_time, size: 28.sp),
+                              Image.asset("assets/icons/duration.png", width: 28.r, height: 28.r,),
                               Text(
                                 "阅读时长",
                                 style: TextStyle(
@@ -259,13 +260,21 @@ class _ProfilePageState extends State<ProfilePage> {
                               ),
                             ],
                           ),
-                          Row(
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Text(
                                 "1899小时56分钟",
                                 style: TextStyle(
                                   color: Colors.grey.shade600,
                                   fontSize: 14.sp,
+                                ),
+                              ),
+                              Text(
+                                "连续阅读29天",
+                                style: TextStyle(
+                                  color: Colors.grey.shade500,
+                                  fontSize: 12.sp,
                                 ),
                               ),
                             ],
@@ -275,6 +284,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ],
                   ),
                 ),
+                18.verticalSpace,
               ],
             ),
           ),

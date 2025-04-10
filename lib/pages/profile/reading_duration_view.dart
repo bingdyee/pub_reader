@@ -1,9 +1,6 @@
-import 'dart:math';
-
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pub_reader/common/values/colors.dart';
 
 class ReadingDurationView extends StatefulWidget {
   const ReadingDurationView({super.key});
@@ -60,6 +57,35 @@ class _ReadingDurationViewState extends State<ReadingDurationView> {
                 minY: 0,
                 groupsSpace: 10,
                 alignment: BarChartAlignment.spaceBetween,
+                barTouchData: BarTouchData(
+                  touchTooltipData: BarTouchTooltipData(
+                    getTooltipColor: (_) => Colors.blue.shade500,
+                    tooltipHorizontalAlignment: FLHorizontalAlignment.center,
+                    fitInsideHorizontally: true,
+                    tooltipPadding: EdgeInsets.symmetric(horizontal: 5.r),
+                    getTooltipItem: (group, groupIndex, rod, rodIndex) {
+                      return BarTooltipItem(
+                        '2025年4月7日\n',
+                        textAlign: TextAlign.left,
+                        TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 12.sp,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: "${(rod.toY).toStringAsFixed(0)}分钟",
+                            style: TextStyle(
+                              color: Colors.white, //widget.touchedBarColor,
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      );
+                    },
+                  ),
+                ),
                 borderData: FlBorderData(
                   border: Border(
                     right: BorderSide.none,
@@ -135,7 +161,11 @@ class _ReadingDurationViewState extends State<ReadingDurationView> {
     return SideTitleWidget(
       meta: meta,
       space: 16,
-      child: Text("${value.toInt()}m", maxLines: 1, style: TextStyle(fontSize: 10.sp, color: Colors.grey)),
+      child: Text(
+        "${value.toInt()}m",
+        maxLines: 1,
+        style: TextStyle(fontSize: 10.sp, color: Colors.grey),
+      ),
     );
   }
 

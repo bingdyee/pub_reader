@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lazy_load_indexed_stack/lazy_load_indexed_stack.dart';
-import 'package:pub_reader/pages/bookshelf/bookshelf_page.dart';
-import 'package:pub_reader/pages/explore/explore_page.dart';
-import 'package:pub_reader/pages/home/home_page.dart';
-import 'package:pub_reader/pages/profile/profile_page.dart';
+import 'assistant/assistant_page.dart';
+import 'bookshelf/bookshelf_page.dart';
+import 'explore/explore_page.dart';
+import 'profile/profile_page.dart';
 
 class TabsPage extends StatefulWidget {
   const TabsPage({super.key});
@@ -56,9 +56,9 @@ class _TabsPageState extends State<TabsPage> {
       body: LazyLoadIndexedStack(
         index: _currentPageIndex,
         children: const [
-          HomePage(),
-          BookshelfPage(),
           ExplorePage(),
+          BookshelfPage(),
+          AssistantPage(),
           ProfilePage(),
         ],
       ),
