@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart' show CupertinoIcons;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'reading_duration_view.dart';
+
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
@@ -187,6 +189,8 @@ class _ProfilePageState extends State<ProfilePage> {
                     ],
                   ),
                 ),
+                15.verticalSpace,
+                ReadingDurationView(),
                 15.verticalSpace,
                 Container(
                   padding: EdgeInsets.all(15.r),
