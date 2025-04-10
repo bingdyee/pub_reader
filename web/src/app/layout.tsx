@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "阅读后台",
   manifest: '/manifest.json',
   icons: {
-    icon: '/icons/favicon.ico',
+    icon: '/favicon.ico',
   },
 };
 

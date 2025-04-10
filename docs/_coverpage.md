@@ -1,6 +1,6 @@
 ![logo](_asserts/favicon.ico)
 
-# novelogic <small>1.0.0</small>
+# pub_reader <small>1.0.0</small>
 
 > A platform for reading novels online for free.
 
@@ -8,5 +8,5 @@
 - Free and ad-free
 - Abundant resources
 
-[GitHub](https://github.com/bingdyee)
+[GitHub](https://github.com/bingdyee/pub_reader)
 [Getting started](#快速开始)
