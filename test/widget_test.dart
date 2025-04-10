@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pub_reader/app.dart';
+import 'package:pub_reader/main.dart';
 
 
 void main() {
