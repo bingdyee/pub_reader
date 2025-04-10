@@ -1,0 +1,11 @@
+basePath: /
+info:
+  contact:
+    email: bingdyee@gmail.com
+    name: Bing D. Yee
+    url: https://github.com/bingdyee
+  description: 中国科幻网 | CNSF(China Science Fiction)
+  title: '[CNSF] Pub Reader API Docs'
+  version: 1.0.0
+paths: {}
+swagger: "2.0"

@@ -1,0 +1,13 @@
+Server:
+  port: 8080
+
+Application:
+  name: pub-reader
+
+Datasource:
+  user: root
+  password: 12345678
+  host: 127.0.0.1
+  port: 33306
+  schema: pub_reader
+
