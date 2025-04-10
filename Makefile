@@ -10,6 +10,6 @@ web:
 	@cd web && npm run dev
 
 server:
-	@cd server && ./gradlew bootRun
+	@cd server && make dev
 
 
