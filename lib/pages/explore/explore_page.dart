@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pub_reader/common/values/colors.dart';
-import 'follow/follow_view.dart';
+import 'subscription/subscription_view.dart';
 import 'discover/discover_view.dart';
-import 'library/library_view.dart';
+import 'curation/curation_view.dart';
 
 class ExplorePage extends StatefulWidget {
   const ExplorePage({super.key});
@@ -50,16 +50,17 @@ class _ExplorePageState extends State<ExplorePage>
                   color: AppColors.primary,
                 ),
               ),
+              indicatorPadding: EdgeInsets.only(bottom: 4.r, left: 1.5.r, right: 1.5.r),
               labelStyle: TextStyle(
                 fontSize: 18.sp,
                 fontWeight: FontWeight.w500,
               ),
               unselectedLabelStyle: TextStyle(
                 fontSize: 18.sp,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 color: Colors.grey.shade600,
               ),
-              tabs: [Tab(text: "关注"), Tab(text: "发现"), Tab(text: "阅读")],
+              tabs: [Tab(text: "订阅"), Tab(text: "发现"), Tab(text: "精选")],
             ),
             ImageIcon(AssetImage("assets/icons/search_s.png"), size: 24.r),
           ],
@@ -67,7 +68,7 @@ class _ExplorePageState extends State<ExplorePage>
       ),
       body: TabBarView(
         controller: _tabController,
-        children: const [FollowView(), DiscoverView(), LibraryView()],
+        children: const [SubscriptionView(), DiscoverView(), CurationView()],
       ),
     );
   }
