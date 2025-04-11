@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pub_reader/pages/tabs.dart';
 
+import 'pages/video/video_page.dart';
+
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -21,7 +23,8 @@ class PageRoutes {
     switch(settings.name) {
       case RoutePath.tabs:
         return pageRoute(TabsPage(), settings: settings);
-
+      case RoutePath.player:
+        return pageRoute(VideoPage(), settings: settings);
     }
     return pageRoute(Center(child: Text("")));
   }

@@ -1,7 +1,10 @@
+import 'package:pub_reader/common/models/video_model.dart';
+
 class Book {
   String id = '';
   String title = '';
   String author = '';
+  String authorAvatar = '';
   String summary = '';
   String coverUrl = '';
   String categoryName = '';
@@ -10,8 +13,9 @@ class Book {
   int bookStatus = 1;
   int readNum = 0;
   int collectNum = 0;
+  int commentNum = 0;
   double score = 0.0;
-  String videoUrl = '';
+  VideoData? video;
   List<String> tags = [];
 
   Book.fromJson(dynamic book) {
@@ -19,21 +23,27 @@ class Book {
     id = book['id'] ?? '';
     title = book['title'] ?? '';
     author = book['author'] ?? '';
+    authorAvatar = book['authorAvatar'] ?? '';
     summary = book['summary'] ?? '';
     coverUrl = book['coverUrl'] ?? '';
     categoryName = book['categoryName'] ?? '';
     subCategoryName = book['subCategoryName'] ?? '';
     wordNum = book['wordNum'] ?? 0;
+    commentNum = book['commentNum'] ?? 0;
     bookStatus = book['bookStatus'] ?? 1;
     collectNum = book['collectNum'] ?? 0;
     readNum = book['readNum'] ?? 0;
     score = book['score'] ?? 0.0;
-    videoUrl = book['videoUrl'] ?? '';
     List<dynamic>? tagList = book['tags'];
     if (tagList != null && tagList.isNotEmpty) {
       tags = tagList.map<String>((t) => t).toList();
     }
+    if (book['video'] != null) {
+      video = VideoData.fromJson(book['video']);
+    }
   }
+
+  bool get hasVideo => video != null;
 
 }
 

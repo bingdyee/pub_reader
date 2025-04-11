@@ -8,5 +8,9 @@ class BookApi {
   static Future<List<Book>> getBookList({int page = 1, keyword="people"}) async {
     return MockedData.mockBooks(10);
   }
+
+  static Future<List<Book>> getVideoBookList(int page) async {
+    return MockedData.mockVideoBooks();
+  }
   
 }
