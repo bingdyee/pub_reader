@@ -115,7 +115,7 @@ class _VideoPageState extends State<VideoPage> {
                 padding: EdgeInsets.only(
                   top: MediaQuery.of(context).padding.top,
                   left: 15.w,
-                  right: 15.w,
+                  right: 24.w,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -126,13 +126,13 @@ class _VideoPageState extends State<VideoPage> {
                       },
                       child: Icon(
                         Icons.chevron_left,
-                        size: 40.r,
+                        size: 38.r,
                         color: Colors.white,
                       ),
                     ),
                     ImageIcon(
-                      AssetImage("assets/icons/search.png"),
-                      size: 30.r,
+                      AssetImage("assets/icons/search_s.png"),
+                      size: 28.r,
                       color: Colors.white,
                     ),
                   ],

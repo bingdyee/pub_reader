@@ -133,51 +133,66 @@ class VideoPlayerWidgetState extends State<VideoPlayerWidget> {
                   Row(
                     spacing: 10.r,
                     children: [
-                      CircleAvatar(
-                        backgroundColor: Colors.grey.shade300,
-                        backgroundImage: NetworkImage(widget.book.authorAvatar),
-                        radius: 18.r,
+                      Container(
+                        width: 40.r,
+                        height: 54.r,
+                        clipBehavior: Clip.hardEdge,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4.r),
+                        ),
+                        child: Image.network(
+                          widget.book.coverUrl,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                       Container(
                         constraints: BoxConstraints(
-                          maxWidth: ScreenUtil().screenWidth * 0.4,
+                          maxWidth: ScreenUtil().screenWidth * 0.7,
                         ),
-                        child: Text(
-                          widget.book.author,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(10.r),
-                        ),
-                        padding: EdgeInsets.only(
-                          left: 8.r,
-                          right: 8.r,
-                          bottom: 3.r,
-                        ),
-                        child: Text(
-                          "关注",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                          ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 8.h,
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  widget.book.title,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16.sp,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                                Icon(Icons.chevron_right, color: Colors.white),
+                              ],
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white.withAlpha(70),
+                                borderRadius: BorderRadius.circular(5.r),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 4.r,
+                                vertical: 2.r,
+                              ),
+                              child: Text(
+                                widget.book.subCategoryName,
+                                maxLines: 1,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
                   SizedBox(
-                    width: ScreenUtil().screenWidth * 0.75,
+                    width: ScreenUtil().screenWidth * 0.78,
                     child: Text(
                       widget.book.summary,
-                      maxLines: 2,
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(color: Colors.white, fontSize: 15.sp),
                     ),
