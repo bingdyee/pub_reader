@@ -46,7 +46,7 @@ class _AssistantPageState extends State<AssistantPage> {
           ],
         ),
       ),
-      body: history()
+      body: history(),
     );
   }
 
@@ -61,22 +61,44 @@ class _AssistantPageState extends State<AssistantPage> {
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
+                  spacing: 8.r,
                   children: [
                     Container(
                       constraints: BoxConstraints(
-                        maxWidth: ScreenUtil().screenWidth * 0.85,
+                        maxWidth: ScreenUtil().screenWidth * 0.8,
                       ),
                       padding: EdgeInsets.symmetric(
                         horizontal: 20.r,
                         vertical: 15.r,
                       ),
+
                       decoration: BoxDecoration(
                         color: Colors.blue.shade100,
                         borderRadius: BorderRadius.circular(12.r),
                       ),
-                      child: Text(
-                        "人物介绍",
-                        style: TextStyle(fontSize: 16.sp),
+                      child: Text("控制室边上是个平台，下方则是一个巨型洞穴，里头一束光也没有，萨德伯里中微子", style: TextStyle(fontSize: 16.sp)),
+                    ),
+                    Container(
+                      width: 0,
+                      height: 0,
+                      decoration: BoxDecoration(
+                        border: Border(
+                          right: BorderSide(
+                            color: Colors.blue.shade100,
+                            width: 8.r,
+                            style: BorderStyle.solid,
+                          ),
+                          top: BorderSide(
+                            color: Colors.transparent,
+                            width: 8.r,
+                            style: BorderStyle.solid,
+                          ),
+                          bottom: BorderSide(
+                            color: Colors.transparent,
+                            width: 8.r,
+                            style: BorderStyle.solid,
+                          )
+                        ),
                       ),
                     ),
                   ],
@@ -138,5 +160,4 @@ class _AssistantPageState extends State<AssistantPage> {
       ],
     );
   }
-
 }
